@@ -2,10 +2,8 @@
 
 int main()
 {
-	Kolo k1;
+	Kula k1;
 	k1.wyswietl();
-
-
 	system("Pause");
 	return 0;
 }

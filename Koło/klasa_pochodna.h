@@ -5,14 +5,22 @@
 class Kolo :public Punkt
 {
 	//atrybuty
+protected:
 	float r;
 	std::string nazwa;
 
 	//metody
 public:
 	void wyswietl();
-	Kolo(std::string nk="Kolko", std::string np="S", float a=0, float b=0, float pr=1);
+	Kolo(std::string nk="Kolko", std::string np="S", float a=1, float b=2, float pr=3);
 };
 
+class Kula :public Kolo
+{
+public:
+	std::string nazwa;
+	Kula(std::string nku = "Kula", std::string nk = "Kolko", std::string np = "S", float a = 1, float b = 2, float pr = 3);
+	void wyswietl();
+};
 #endif // !kl_poch
 
